@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api;  // namespace
 
 use App\Http\Controllers\Controller;
 use App\Models\Product;
@@ -9,9 +9,9 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
 
-    public function index()
+    public function index() # 
     {
-        $products = Product::all();
+        $products = Product::all(); # 
         return $products;
     }
 
